@@ -1,0 +1,146 @@
+.logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: 150px;
+}
+/* ===== NDF GREEN THEME — Soft Page Green + Strong Content Boxes ===== */
+/* Page background: soft, opaque green */
+/* Content boxes: rich, strong green */
+/* ---------- BODY ---------- */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #b7d1be;       /* new soft, pale green background */
+  color: #1f2b20;
+}
+/* ---------- HEADER ---------- */
+header {
+  background: #0d6b3a;       /* medium-strong green */
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+/* ---------- NAVIGATION ---------- */
+nav {
+  background: #0a5c33;       /* medium green */
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li { margin: 0; }
+nav a {
+  color: white;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  background: #0f8a4e;      /* bright accent green */
+}
+/* ---------- MAIN CONTENT BOX ---------- */
+main {
+  background: #0d6b3a;       /* stronger, richer green box */
+  color: #ffffff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 850px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+/* ---------- HEADERS ---------- */
+h2 {
+  color: #afffc5;           /* soft mint-green highlight */
+  border-bottom: 2px solid #0f8a4e;
+  padding-bottom: 0.3rem;
+}
+h3 {
+  color: #ffffff;
+}
+/* ---------- FORM INPUTS ---------- */
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #e9ffe9;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  background: #e5f6e8;    /* very light, readable box */
+  color: #1f2b20;
+}
+button {
+  margin-top: 1.5rem;
+  background: #0f8a4e;    /* bright action green */
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0a5c33;
+}
+/* ---------- FOOTER ---------- */
+footer {
+  background: #083a21;     /* dark footer green */
+  color: #cdebd4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+/* ===== NEWS TICKER WITH BREAKING LABEL ===== */
+.news-ticker {
+  background: #083a21;
+  color: #c8ffd9;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-top: 3px solid #00a75d;
+  border-bottom: 3px solid #00a75d;
+  display: flex;
+  align-items: center;
+}
+/* BREAKING red box */
+.breaking-box {
+  background: #cc0000;
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  animation: breaking-flash 1s infinite alternate;
+}
+/* Flashing effect */
+@keyframes breaking-flash {
+  from { opacity: 1; }
+  to   { opacity: 0.4; }
+}
+.ticker-track {
+  display: inline-block;
+  animation: ticker-scroll 20s linear infinite;
+}
+.ticker-track span {
+  display: inline-block;
+  margin-right: 3rem;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+/* sliding animation */
+@keyframes ticker-scroll {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
+}
